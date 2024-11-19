@@ -1,0 +1,26 @@
+#include <stdio.h>
+int sum(int x, int y);
+int square(int a);
+disp (int x);
+main(){
+int a, b, c;
+printf("ENTER A and B: ");
+scanf("%d %d", &a, &b);
+c = sum(a, b);
+printf ("\nSum of A & B is\t: ");
+disp (c);
+c = square (a);
+printf ("\nSquare of A is\t: ");
+disp (c);
+}
+int sum (int x, int y){
+int c;
+c=x+y;
+return c;
+}
+int square (int a){
+return a*a;
+}
+disp (int x){
+printf("%d", x);
+}
