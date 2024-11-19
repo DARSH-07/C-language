@@ -1,0 +1,14 @@
+                                                                    //a program using pointers to compute the sum of all elements stored in an array.
+#include <stdio.h>
+main()
+{
+int num[5] = {75, 10, 15, 8, 7};
+int *pt;
+int i, sum=0;
+pt = num;
+for(i=0; i<5; i++)
+{
+sum = sum + *(pt+i);
+}
+printf("Sum = %d\n", sum);
+}
