@@ -1,0 +1,27 @@
+#include <stdio.h>
+sum(int x, int y);
+square(int a);
+cube(int b);
+main()
+{
+int a, b;
+printf("ENTER A and B: ");
+scanf("%d %d", &a, &b);
+sum(a, b);
+square(a);
+cube(b);
+}
+sum(int x, int y)
+{
+int c;
+c=x+y;
+printf("\nSUM is: %d", c);
+}
+square(int a)
+{
+printf("\nSQUARE is: %d", a*a);
+}
+cube(int b)
+{
+printf("\nCUBE is: %d", b*b*b);
+}
