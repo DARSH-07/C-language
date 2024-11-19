@@ -1,0 +1,19 @@
+                                                                               // a program to find the largest of three numbers.
+#include <stdio.h>
+int maximum (int x, int y)
+{
+int z;
+z = (x >= y) ? x : y;
+return (z);
+}
+main ()
+{
+int a, b, c;
+printf ("\na = ") ;
+scanf ("%d", &a) ;
+printf ("\nb = ") ;
+scanf ("%d", &b) ;
+printf ("\nc = ") ;
+scanf ("%d", &c) ;
+printf ("\n\nMaximum = %d", maximum (c, maximum (a, b)));
+}
