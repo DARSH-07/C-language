@@ -1,6 +1,5 @@
                                                               //a program to find the area of rectangle, square and circle.
 #include<stdio.h>
-#define PI 3.14
 main()
 {
 int side, radius, length, breadth;
