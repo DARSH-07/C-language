@@ -1,0 +1,21 @@
+                                                                                                          Programs on structures.
+                                                                    Write a program to accept and display month name, abbreviation and number of days. Use the concept of structure.
+Example Output:
+December abbreviated as Dec has 31 days
+
+#include <stdio.h>
+#include <string.h>
+typedef struct month
+{
+char name[10];
+char abbr[4];
+int days;
+}MONTH;
+main()
+{
+MONTH m;
+strcpy(m.name, "January");
+strcpy(m.abbr, "Jan");
+m.days=31;
+printf("%s abbreviated as %s has %d days\n", m.name, m.abbr, m.days);
+}
