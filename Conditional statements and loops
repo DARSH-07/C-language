@@ -1,0 +1,15 @@
+                                                                              //a program to find the sum of squares of digits of a number.
+#include <stdio.h>
+main()
+{
+int a, tot=0, b;
+printf ("\nEnter a number: ");
+scanf ("%d", &a);
+while (a>0)
+{
+b=(a%10);
+tot=tot+(b*b);
+a=a/10;
+}
+printf("\nSum of squares of digits is %d\n", tot);
+}
