@@ -1,0 +1,22 @@
+                                                                                //a program to demonstrate the use of pointers.
+                                                            //Write a program to swap two numbers without using third variable. Use the concept of pointers.
+#include <stdio.h>
+main()
+{
+int a=10,b=20;
+printf("BEFORE SWAP\n");
+reprint(a, b);
+swap (&a, &b);
+printf("AFTER SWAP\n");
+reprint(a, b);
+}
+swap(int *a, int *b)
+{
+*a=*a+*b;
+*b=*a-*b;
+*a=*a-*b;
+}
+reprint(int a, int b)
+{
+printf("A=%d\nB=%d\n", a, b);
+}
